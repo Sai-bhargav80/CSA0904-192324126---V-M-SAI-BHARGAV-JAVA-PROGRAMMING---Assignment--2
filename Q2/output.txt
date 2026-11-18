@@ -1,0 +1,57 @@
+Mean nanoseconds PER OPERATION (5 runs, K=2000 operations per run; 'n/a' = operation not supported by the structure)
+
+add at end
+      size       ArrayList      LinkedList      ArrayDeque     plain array
+     10000            17.3            50.0            30.9             9.9
+     50000            21.7            37.4            21.8            17.3
+    100000            15.4           100.5             4.9             2.8
+    200000            24.3            19.4            34.1             2.7
+
+insert at front
+      size       ArrayList      LinkedList      ArrayDeque     plain array
+     10000           565.0            31.4            14.3         10232.8
+     50000          4677.6            11.6             5.8         35371.8
+    100000          8299.7             7.3             3.6         74178.8
+    200000         16736.9             7.9             3.2        114527.6
+
+insert in middle
+      size       ArrayList      LinkedList      ArrayDeque     plain array
+     10000           173.8          9457.9             n/a          3281.0
+     50000          2041.3         37724.1             n/a         15633.2
+    100000          4426.1        135115.2             n/a         33996.0
+    200000          9971.0        306457.2             n/a         64054.4
+
+remove at front
+      size       ArrayList      LinkedList      ArrayDeque     plain array
+     10000           270.1            16.2           122.6          8536.2
+     50000          7946.4            35.7            23.2         25843.1
+    100000          8550.6             7.7             5.9         56816.3
+    200000         17905.8             8.0             2.1        112481.0
+
+remove in middle
+      size       ArrayList      LinkedList      ArrayDeque     plain array
+     10000           124.6          6427.2             n/a          1792.3
+     50000          1946.9         43751.1             n/a         14817.2
+    100000          4305.0        131310.7             n/a         21030.1
+    200000          8850.3        262405.3             n/a         43797.1
+
+get k-th (random)
+      size       ArrayList      LinkedList      ArrayDeque     plain array
+     10000            16.9          4300.9             n/a             3.7
+     50000            22.0         25640.3             n/a             6.0
+    100000            24.2         56130.6             n/a             9.8
+    200000            26.4        151195.7             n/a            20.1
+
+iterate whole list
+      size       ArrayList      LinkedList      ArrayDeque     plain array
+     10000            78.8             5.1             8.2             1.9
+     50000             5.2             5.4             4.0             1.2
+    100000            10.8             6.8             5.5             0.8
+    200000             5.0             7.3             4.7             0.9
+
+UP NEXT workload: queue of 50,000 songs, then 200,000 operations (40% addLast, 20% addFirst, 40% removeFirst); total ms, mean of 5 runs
+  ArrayList         637.0 ms
+  LinkedList          6.7 ms
+  ArrayDeque          7.8 ms
+
+(sink true) raw data in raw_data.csv

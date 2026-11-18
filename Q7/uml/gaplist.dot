@@ -1,0 +1,4 @@
+digraph G { rankdir=TB; node [fontname="Helvetica", fontsize=11];
+ cls [shape=record, style=filled, fillcolor="#F4F7FB", label="{GapList\<E\>|- buf: Object[]\l- gapStart: int\l- gapEnd: int\l+ moves: long  (instrumentation)\l|+ size(): int  = buf.length - (gapEnd - gapStart)\l+ get(i): E   O(1)\l+ add(index, e)  cost = distance gap moves\l+ remove(index): E\l- moveGap(pos)\l- grow()\l}"];
+ buf [shape=record, style=filled, fillcolor="#FFF6E0", label="{buf (state after inserting at index 4)|{e0|e1|e2|e3|<g>gap|gap|gap|e4|e5|e6|e7}}"];
+ cls -> buf [style=dashed, label="holds"]; }

@@ -1,0 +1,3 @@
+Differential test: 20 random sequences, 400000 operations total (add at cursor / add at end / remove / get).
+Mismatches between GapList and ArrayList: 0   -> behaviour identical
+Bounds are checked: index 0, size 0

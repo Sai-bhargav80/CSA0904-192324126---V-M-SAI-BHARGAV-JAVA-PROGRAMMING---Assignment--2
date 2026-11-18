@@ -1,0 +1,150 @@
+workload,approach,run,ms
+W1 short ticket (10 fields) x 200,000 tickets,String +,1,39.228
+W1 short ticket (10 fields) x 200,000 tickets,String +,2,37.925
+W1 short ticket (10 fields) x 200,000 tickets,String +,3,25.991
+W1 short ticket (10 fields) x 200,000 tickets,String +,4,27.047
+W1 short ticket (10 fields) x 200,000 tickets,String +,5,26.831
+W1 short ticket (10 fields) x 200,000 tickets,String +,6,26.294
+W1 short ticket (10 fields) x 200,000 tickets,String +,7,25.946
+W1 short ticket (10 fields) x 200,000 tickets,StringBuilder,1,56.652
+W1 short ticket (10 fields) x 200,000 tickets,StringBuilder,2,40.169
+W1 short ticket (10 fields) x 200,000 tickets,StringBuilder,3,29.569
+W1 short ticket (10 fields) x 200,000 tickets,StringBuilder,4,22.290
+W1 short ticket (10 fields) x 200,000 tickets,StringBuilder,5,14.166
+W1 short ticket (10 fields) x 200,000 tickets,StringBuilder,6,14.356
+W1 short ticket (10 fields) x 200,000 tickets,StringBuilder,7,17.764
+W1 short ticket (10 fields) x 200,000 tickets,StringBuffer,1,37.034
+W1 short ticket (10 fields) x 200,000 tickets,StringBuffer,2,18.771
+W1 short ticket (10 fields) x 200,000 tickets,StringBuffer,3,19.121
+W1 short ticket (10 fields) x 200,000 tickets,StringBuffer,4,19.200
+W1 short ticket (10 fields) x 200,000 tickets,StringBuffer,5,19.263
+W1 short ticket (10 fields) x 200,000 tickets,StringBuffer,6,19.289
+W1 short ticket (10 fields) x 200,000 tickets,StringBuffer,7,19.274
+W1 short ticket (10 fields) x 200,000 tickets,String.join,1,67.719
+W1 short ticket (10 fields) x 200,000 tickets,String.join,2,15.733
+W1 short ticket (10 fields) x 200,000 tickets,String.join,3,15.667
+W1 short ticket (10 fields) x 200,000 tickets,String.join,4,15.704
+W1 short ticket (10 fields) x 200,000 tickets,String.join,5,15.555
+W1 short ticket (10 fields) x 200,000 tickets,String.join,6,16.191
+W1 short ticket (10 fields) x 200,000 tickets,String.join,7,15.839
+W1 short ticket (10 fields) x 200,000 tickets,StringJoiner,1,51.082
+W1 short ticket (10 fields) x 200,000 tickets,StringJoiner,2,28.221
+W1 short ticket (10 fields) x 200,000 tickets,StringJoiner,3,27.794
+W1 short ticket (10 fields) x 200,000 tickets,StringJoiner,4,35.496
+W1 short ticket (10 fields) x 200,000 tickets,StringJoiner,5,27.020
+W1 short ticket (10 fields) x 200,000 tickets,StringJoiner,6,25.031
+W1 short ticket (10 fields) x 200,000 tickets,StringJoiner,7,25.984
+W1 short ticket (10 fields) x 200,000 tickets,String.format,1,97.729
+W1 short ticket (10 fields) x 200,000 tickets,String.format,2,81.358
+W1 short ticket (10 fields) x 200,000 tickets,String.format,3,81.622
+W1 short ticket (10 fields) x 200,000 tickets,String.format,4,70.351
+W1 short ticket (10 fields) x 200,000 tickets,String.format,5,71.485
+W1 short ticket (10 fields) x 200,000 tickets,String.format,6,70.661
+W1 short ticket (10 fields) x 200,000 tickets,String.format,7,70.650
+W2 bulk (50 fields) x 10,000 tickets,String +,1,7.460
+W2 bulk (50 fields) x 10,000 tickets,String +,2,7.279
+W2 bulk (50 fields) x 10,000 tickets,String +,3,7.434
+W2 bulk (50 fields) x 10,000 tickets,String +,4,7.240
+W2 bulk (50 fields) x 10,000 tickets,String +,5,7.127
+W2 bulk (50 fields) x 10,000 tickets,String +,6,7.185
+W2 bulk (50 fields) x 10,000 tickets,String +,7,7.001
+W2 bulk (50 fields) x 10,000 tickets,StringBuilder,1,2.813
+W2 bulk (50 fields) x 10,000 tickets,StringBuilder,2,2.727
+W2 bulk (50 fields) x 10,000 tickets,StringBuilder,3,2.620
+W2 bulk (50 fields) x 10,000 tickets,StringBuilder,4,2.707
+W2 bulk (50 fields) x 10,000 tickets,StringBuilder,5,2.713
+W2 bulk (50 fields) x 10,000 tickets,StringBuilder,6,2.620
+W2 bulk (50 fields) x 10,000 tickets,StringBuilder,7,2.687
+W2 bulk (50 fields) x 10,000 tickets,StringBuffer,1,5.359
+W2 bulk (50 fields) x 10,000 tickets,StringBuffer,2,2.978
+W2 bulk (50 fields) x 10,000 tickets,StringBuffer,3,2.853
+W2 bulk (50 fields) x 10,000 tickets,StringBuffer,4,2.929
+W2 bulk (50 fields) x 10,000 tickets,StringBuffer,5,2.885
+W2 bulk (50 fields) x 10,000 tickets,StringBuffer,6,3.468
+W2 bulk (50 fields) x 10,000 tickets,StringBuffer,7,4.202
+W2 bulk (50 fields) x 10,000 tickets,String.join,1,3.068
+W2 bulk (50 fields) x 10,000 tickets,String.join,2,3.270
+W2 bulk (50 fields) x 10,000 tickets,String.join,3,3.251
+W2 bulk (50 fields) x 10,000 tickets,String.join,4,3.071
+W2 bulk (50 fields) x 10,000 tickets,String.join,5,3.071
+W2 bulk (50 fields) x 10,000 tickets,String.join,6,3.089
+W2 bulk (50 fields) x 10,000 tickets,String.join,7,3.132
+W2 bulk (50 fields) x 10,000 tickets,StringJoiner,1,6.598
+W2 bulk (50 fields) x 10,000 tickets,StringJoiner,2,7.143
+W2 bulk (50 fields) x 10,000 tickets,StringJoiner,3,6.549
+W2 bulk (50 fields) x 10,000 tickets,StringJoiner,4,6.743
+W2 bulk (50 fields) x 10,000 tickets,StringJoiner,5,6.151
+W2 bulk (50 fields) x 10,000 tickets,StringJoiner,6,6.698
+W2 bulk (50 fields) x 10,000 tickets,StringJoiner,7,7.021
+W2 bulk (50 fields) x 10,000 tickets,String.format,1,262.423
+W2 bulk (50 fields) x 10,000 tickets,String.format,2,244.389
+W2 bulk (50 fields) x 10,000 tickets,String.format,3,39.960
+W2 bulk (50 fields) x 10,000 tickets,String.format,4,32.685
+W2 bulk (50 fields) x 10,000 tickets,String.format,5,19.519
+W2 bulk (50 fields) x 10,000 tickets,String.format,6,19.499
+W2 bulk (50 fields) x 10,000 tickets,String.format,7,19.933
+W3 group manifest (20,000 fields) x 3 tickets,String +,1,462.557
+W3 group manifest (20,000 fields) x 3 tickets,String +,2,480.810
+W3 group manifest (20,000 fields) x 3 tickets,String +,3,471.280
+W3 group manifest (20,000 fields) x 3 tickets,String +,4,468.260
+W3 group manifest (20,000 fields) x 3 tickets,String +,5,464.440
+W3 group manifest (20,000 fields) x 3 tickets,String +,6,491.279
+W3 group manifest (20,000 fields) x 3 tickets,String +,7,430.980
+W3 group manifest (20,000 fields) x 3 tickets,StringBuilder,1,0.438
+W3 group manifest (20,000 fields) x 3 tickets,StringBuilder,2,0.429
+W3 group manifest (20,000 fields) x 3 tickets,StringBuilder,3,0.358
+W3 group manifest (20,000 fields) x 3 tickets,StringBuilder,4,0.358
+W3 group manifest (20,000 fields) x 3 tickets,StringBuilder,5,0.422
+W3 group manifest (20,000 fields) x 3 tickets,StringBuilder,6,0.343
+W3 group manifest (20,000 fields) x 3 tickets,StringBuilder,7,0.649
+W3 group manifest (20,000 fields) x 3 tickets,StringBuffer,1,0.462
+W3 group manifest (20,000 fields) x 3 tickets,StringBuffer,2,0.411
+W3 group manifest (20,000 fields) x 3 tickets,StringBuffer,3,0.459
+W3 group manifest (20,000 fields) x 3 tickets,StringBuffer,4,0.410
+W3 group manifest (20,000 fields) x 3 tickets,StringBuffer,5,0.504
+W3 group manifest (20,000 fields) x 3 tickets,StringBuffer,6,0.827
+W3 group manifest (20,000 fields) x 3 tickets,StringBuffer,7,0.560
+W3 group manifest (20,000 fields) x 3 tickets,String.join,1,0.522
+W3 group manifest (20,000 fields) x 3 tickets,String.join,2,0.588
+W3 group manifest (20,000 fields) x 3 tickets,String.join,3,0.459
+W3 group manifest (20,000 fields) x 3 tickets,String.join,4,0.458
+W3 group manifest (20,000 fields) x 3 tickets,String.join,5,0.385
+W3 group manifest (20,000 fields) x 3 tickets,String.join,6,0.410
+W3 group manifest (20,000 fields) x 3 tickets,String.join,7,0.374
+W3 group manifest (20,000 fields) x 3 tickets,StringJoiner,1,0.718
+W3 group manifest (20,000 fields) x 3 tickets,StringJoiner,2,0.737
+W3 group manifest (20,000 fields) x 3 tickets,StringJoiner,3,0.699
+W3 group manifest (20,000 fields) x 3 tickets,StringJoiner,4,0.717
+W3 group manifest (20,000 fields) x 3 tickets,StringJoiner,5,0.679
+W3 group manifest (20,000 fields) x 3 tickets,StringJoiner,6,0.712
+W3 group manifest (20,000 fields) x 3 tickets,StringJoiner,7,0.869
+W3 group manifest (20,000 fields) x 3 tickets,String.format,1,2.042
+W3 group manifest (20,000 fields) x 3 tickets,String.format,2,2.137
+W3 group manifest (20,000 fields) x 3 tickets,String.format,3,3.340
+W3 group manifest (20,000 fields) x 3 tickets,String.format,4,2.413
+W3 group manifest (20,000 fields) x 3 tickets,String.format,5,2.846
+W3 group manifest (20,000 fields) x 3 tickets,String.format,6,2.207
+W3 group manifest (20,000 fields) x 3 tickets,String.format,7,3.081
+
+scaling,n,approach,microseconds_per_ticket
+scaling,500,String +,49.66
+scaling,500,StringBuilder,3.31
+scaling,500,StringBuffer,3.03
+scaling,1000,String +,205.63
+scaling,1000,StringBuilder,6.14
+scaling,1000,StringBuffer,6.44
+scaling,2000,String +,836.70
+scaling,2000,StringBuilder,16.70
+scaling,2000,StringBuffer,19.12
+scaling,4000,String +,5196.82
+scaling,4000,StringBuilder,29.64
+scaling,4000,StringBuffer,29.35
+scaling,8000,String +,21413.44
+scaling,8000,StringBuilder,36.84
+scaling,8000,StringBuffer,43.53
+scaling,16000,String +,78719.54
+scaling,16000,StringBuilder,77.01
+scaling,16000,StringBuffer,89.57
+scaling,32000,String +,335095.56
+scaling,32000,StringBuilder,206.73
+scaling,32000,StringBuffer,228.82

@@ -1,0 +1,27 @@
+Test 1a: Broken class, the same Student object scanned twice (card object reused)
+    PREDICTED: size 2 (identity hash is equal for the same object, so the duplicate is detected)
+    OBSERVED : size 2
+
+Test 1b: Broken class, three different students, no repeats
+    PREDICTED: size 3
+    OBSERVED : size 3
+
+Test 2: 10 students, each scanned 10 times with a NEW object per scan (100 scans)
+    PREDICTED: Broken: 100 (every new object gets a different identity hash, equals() is never reached); Fixed: 10
+    OBSERVED : Broken [100, 100, 100, 100, 100] in 5 runs; Fixed [10, 10, 10, 10, 10]
+
+Test 2b: Broken set.contains(new Broken("R1", ...)) although R1 is in the set and equals() says they are equal
+    PREDICTED: false (lookup goes to a different bucket)
+    OBSERVED : false
+
+Test 3: Fixed-style class, regNo changed from OLD to NEW AFTER insertion
+    PREDICTED: contains(m) false, remove(m) false, size stays 1 (element is 'lost' in the old bucket); iteration still sees it
+    OBSERVED : contains=false, remove=false, size=1, iteration sees: NEW
+
+Test 4: two DIFFERENT students (regNo 201, 202) with the same name; compareTo compares names only
+    PREDICTED: HashSet size 2 (equals says different), TreeSet size 1 (compareTo = 0 means 'same')
+    OBSERVED : HashSet size 2, TreeSet size 1
+
+How HashSet works: after adding two different elements: hashCode calls = 2, equals calls = 0; adding a duplicate caused 1 hashCode call(s) and 1 equals call(s) -> size 2
+
+Verification of corrected class on 10,000 random pairs (31 equal pairs): contract violations = 0

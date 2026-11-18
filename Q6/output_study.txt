@@ -1,0 +1,32 @@
+=== 1. Correctness check: 8 patients ===
+Arrival order : [Ravi(S3), Meena(S1), John(S3), Asha(S5), Kumar(S1), Lata(S2), Dev(S2), Zoya(S1)]
+By hand       : [Meena(S1), Kumar(S1), Zoya(S1), Lata(S2), Dev(S2), Ravi(S3), John(S3), Asha(S5)]
+printing the PriorityQueue directly (heap array order): [Meena(S1), Kumar(S1), Lata(S2), Zoya(S1), Ravi(S3), John(S3), Dev(S2), Asha(S5)]
+poll() until empty (treatment order)                  : [Meena(S1), Kumar(S1), Zoya(S1), Lata(S2), Dev(S2), Ravi(S3), John(S3), Asha(S5)]
+Matches hand-worked order: true
+Waiting-list display without removing anyone (sorted COPY): [Meena(S1), Kumar(S1), Zoya(S1), Lata(S2), Dev(S2), Ravi(S3), John(S3), Asha(S5)]   queue size still 8
+
+=== 2. Growth: cost of add and of poll (ns per operation, mean of 5 runs after warm-up) ===
+         n          add         poll     predicted add / poll
+     10000         57.2        777.6      O(log n) / O(log n)
+    100000         52.2        223.0      O(log n) / O(log n)
+   1000000         35.9        402.7      O(log n) / O(log n)
+
+=== 3. Starvation simulation: one minor patient (S5) arrives at minute 0; every minute 1 critical (S1) patient arrives and the doctor sees 1 patient per minute ===
+  strict priority            : S5 patient STILL WAITING after 5000 minutes (5000 critical patients were served ahead of them)
+  aging rule (W = 30 min/level): S5 patient served at minute 120   (predicted: minor score = 0 + 5*30 = 150; a new S1 patient at minute m scores m + 30, so the minor patient wins from m = 120 = 4*30)
+  aging rule, all arrive at minute 100: [Critical(S1), Medium(S3), Minor(S5)]  (severity still decides when waiting times are equal)
+
+=== 4. Alternatives: admit n patients, then serve all (ns per operation, mean of 5 runs after warm-up) ===
+         n design                            admit   serve next
+      2000 PriorityQueue                     137.0        724.3
+      2000 sorted LinkedList                5705.2        511.7
+      2000 5 FIFO queues                      32.7         19.3
+     20000 PriorityQueue                      79.6        417.2
+     20000 sorted LinkedList               29081.4          6.6
+     20000 5 FIFO queues                      25.0        106.3
+    200000 PriorityQueue                      74.0        223.2
+    200000 sorted LinkedList                     -            -   (skipped: O(n) per admit, n^2 in total)
+    200000 5 FIFO queues                       7.7          5.6
+
+=== 5. One whole day: 5,000 admissions + 5,000 treatments in 2.74 ms (sink true) ===

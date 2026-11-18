@@ -1,0 +1,29 @@
+=== Data set A: ties at every level (points, then goal difference, then name) ===
+Expected (by hand): Lions Tigers Hawks Wolves Bears Sharks Foxes Owls Ants Bats Cats
+Observed          : Lions Tigers Hawks Wolves Bears Sharks Foxes Owls Ants Bats Cats
+Match: true
+Same data inserted in a different order gives the same ranking: true
+
+=== Data set B: designed to break faulty comparators ===
+Principle check (all triples of 40 teams with many ties) - number of violations:
+  correct chain (reversed points, reversed goalDiff, name) : 0
+  no name tie-breaker                                       : 0   (equal items still compare as equal, but order then depends on insertion order)
+  reversed() applied to the WHOLE chain                      : 0   (consistent, but wrong order: name Z-A, points low first)
+  subtraction (b.points - a.points) with extreme points     : 3 violations on only 3 teams
+      compare(A,B) = -2147483647, compare(B,C) = -2147483647, compare(A,C) = 2  -> A before B, B before C, but C before A (overflow)
+      sorting 2000 teams with the subtraction comparator: no exception; result correctly ordered by the proper comparator? false
+  no tie-breaker, input order 1: Lions Tigers Hawks Wolves Sharks Bears Foxes Owls Ants Bats Cats
+  no tie-breaker, input order 2: Tigers Lions Wolves Hawks Bears Sharks Owls Foxes Bats Ants Cats
+  rankings identical? false
+
+=== Reuse: wildcards and bounded types ===
+Leaderboard<Team> filled from List<CollegeTeam>: [CollegeB(5,3), CollegeA(5,1)]
+Leaderboard<CollegeTeam> using Comparator<Team> : [CollegeB(5,3), CollegeA(5,1)]
+Same Leaderboard<T> class ranking players        : [Player[name=Asha, score=95], Player[name=Kumar, score=80], Player[name=Ravi, score=80]]
+best() with T extends Comparable<? super T>      : Y(5,3)
+
+=== Alternative: Comparator chain vs Comparable vs three stable sorts (mean ms of 5 runs, after warm-up) ===
+         n comparator chain (1 sort)    Comparable (1 sort)   3 stable sorts (3 sorts) all three give identical rankings
+     10000                   11.9                    4.5                       19.4 true
+    100000                   93.8                   45.4                      111.0 true
+   1000000                 1927.2                  772.9                     1549.2 true

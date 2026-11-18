@@ -1,0 +1,518 @@
+operation,size,structure,run,ns_per_op
+add at end,10000,ArrayList,1,7.9
+add at end,10000,ArrayList,2,38.3
+add at end,10000,ArrayList,3,9.3
+add at end,10000,ArrayList,4,18.4
+add at end,10000,ArrayList,5,12.5
+add at end,10000,LinkedList,1,11.4
+add at end,10000,LinkedList,2,109.5
+add at end,10000,LinkedList,3,8.9
+add at end,10000,LinkedList,4,87.7
+add at end,10000,LinkedList,5,32.5
+add at end,10000,ArrayDeque,1,49.0
+add at end,10000,ArrayDeque,2,8.6
+add at end,10000,ArrayDeque,3,57.7
+add at end,10000,ArrayDeque,4,11.1
+add at end,10000,ArrayDeque,5,28.2
+add at end,10000,plain array,1,25.4
+add at end,10000,plain array,2,5.2
+add at end,10000,plain array,3,4.6
+add at end,10000,plain array,4,9.6
+add at end,10000,plain array,5,4.5
+add at end,50000,ArrayList,1,16.8
+add at end,50000,ArrayList,2,6.1
+add at end,50000,ArrayList,3,36.8
+add at end,50000,ArrayList,4,25.5
+add at end,50000,ArrayList,5,23.4
+add at end,50000,LinkedList,1,80.2
+add at end,50000,LinkedList,2,6.4
+add at end,50000,LinkedList,3,47.4
+add at end,50000,LinkedList,4,5.7
+add at end,50000,LinkedList,5,47.4
+add at end,50000,ArrayDeque,1,6.7
+add at end,50000,ArrayDeque,2,39.1
+add at end,50000,ArrayDeque,3,6.0
+add at end,50000,ArrayDeque,4,51.6
+add at end,50000,ArrayDeque,5,5.4
+add at end,50000,plain array,1,54.2
+add at end,50000,plain array,2,3.3
+add at end,50000,plain array,3,3.2
+add at end,50000,plain array,4,3.0
+add at end,50000,plain array,5,22.6
+add at end,100000,ArrayList,1,5.9
+add at end,100000,ArrayList,2,38.3
+add at end,100000,ArrayList,3,4.6
+add at end,100000,ArrayList,4,22.0
+add at end,100000,ArrayList,5,6.4
+add at end,100000,LinkedList,1,120.9
+add at end,100000,LinkedList,2,9.1
+add at end,100000,LinkedList,3,29.9
+add at end,100000,LinkedList,4,332.8
+add at end,100000,LinkedList,5,9.7
+add at end,100000,ArrayDeque,1,5.5
+add at end,100000,ArrayDeque,2,4.8
+add at end,100000,ArrayDeque,3,4.8
+add at end,100000,ArrayDeque,4,4.7
+add at end,100000,ArrayDeque,5,4.8
+add at end,100000,plain array,1,2.8
+add at end,100000,plain array,2,3.0
+add at end,100000,plain array,3,2.7
+add at end,100000,plain array,4,2.9
+add at end,100000,plain array,5,2.6
+add at end,200000,ArrayList,1,31.3
+add at end,200000,ArrayList,2,47.6
+add at end,200000,ArrayList,3,4.8
+add at end,200000,ArrayList,4,5.0
+add at end,200000,ArrayList,5,32.9
+add at end,200000,LinkedList,1,6.7
+add at end,200000,LinkedList,2,5.5
+add at end,200000,LinkedList,3,7.9
+add at end,200000,LinkedList,4,5.5
+add at end,200000,LinkedList,5,71.3
+add at end,200000,ArrayDeque,1,55.5
+add at end,200000,ArrayDeque,2,5.2
+add at end,200000,ArrayDeque,3,5.5
+add at end,200000,ArrayDeque,4,40.1
+add at end,200000,ArrayDeque,5,64.4
+add at end,200000,plain array,1,2.4
+add at end,200000,plain array,2,2.7
+add at end,200000,plain array,3,2.6
+add at end,200000,plain array,4,3.1
+add at end,200000,plain array,5,2.8
+insert at front,10000,ArrayList,1,494.1
+insert at front,10000,ArrayList,2,589.3
+insert at front,10000,ArrayList,3,1018.8
+insert at front,10000,ArrayList,4,366.7
+insert at front,10000,ArrayList,5,356.2
+insert at front,10000,LinkedList,1,29.9
+insert at front,10000,LinkedList,2,24.5
+insert at front,10000,LinkedList,3,46.6
+insert at front,10000,LinkedList,4,26.4
+insert at front,10000,LinkedList,5,29.7
+insert at front,10000,ArrayDeque,1,15.5
+insert at front,10000,ArrayDeque,2,15.9
+insert at front,10000,ArrayDeque,3,13.6
+insert at front,10000,ArrayDeque,4,13.1
+insert at front,10000,ArrayDeque,5,13.4
+insert at front,10000,plain array,1,8634.3
+insert at front,10000,plain array,2,12041.8
+insert at front,10000,plain array,3,9076.7
+insert at front,10000,plain array,4,6279.7
+insert at front,10000,plain array,5,15131.6
+insert at front,50000,ArrayList,1,4898.5
+insert at front,50000,ArrayList,2,4489.9
+insert at front,50000,ArrayList,3,4642.1
+insert at front,50000,ArrayList,4,4620.4
+insert at front,50000,ArrayList,5,4737.4
+insert at front,50000,LinkedList,1,14.6
+insert at front,50000,LinkedList,2,8.5
+insert at front,50000,LinkedList,3,16.5
+insert at front,50000,LinkedList,4,8.2
+insert at front,50000,LinkedList,5,10.1
+insert at front,50000,ArrayDeque,1,6.4
+insert at front,50000,ArrayDeque,2,5.2
+insert at front,50000,ArrayDeque,3,6.0
+insert at front,50000,ArrayDeque,4,9.0
+insert at front,50000,ArrayDeque,5,2.1
+insert at front,50000,plain array,1,32530.9
+insert at front,50000,plain array,2,39256.3
+insert at front,50000,plain array,3,34733.5
+insert at front,50000,plain array,4,36187.3
+insert at front,50000,plain array,5,34150.8
+insert at front,100000,ArrayList,1,8628.7
+insert at front,100000,ArrayList,2,8327.5
+insert at front,100000,ArrayList,3,8038.8
+insert at front,100000,ArrayList,4,8328.4
+insert at front,100000,ArrayList,5,8175.2
+insert at front,100000,LinkedList,1,8.9
+insert at front,100000,LinkedList,2,7.3
+insert at front,100000,LinkedList,3,8.9
+insert at front,100000,LinkedList,4,6.0
+insert at front,100000,LinkedList,5,5.5
+insert at front,100000,ArrayDeque,1,3.8
+insert at front,100000,ArrayDeque,2,3.3
+insert at front,100000,ArrayDeque,3,3.4
+insert at front,100000,ArrayDeque,4,3.9
+insert at front,100000,ArrayDeque,5,3.7
+insert at front,100000,plain array,1,84870.2
+insert at front,100000,plain array,2,75857.4
+insert at front,100000,plain array,3,73942.2
+insert at front,100000,plain array,4,68790.0
+insert at front,100000,plain array,5,67434.2
+insert at front,200000,ArrayList,1,16183.8
+insert at front,200000,ArrayList,2,17565.0
+insert at front,200000,ArrayList,3,16844.8
+insert at front,200000,ArrayList,4,16174.1
+insert at front,200000,ArrayList,5,16916.8
+insert at front,200000,LinkedList,1,8.2
+insert at front,200000,LinkedList,2,8.0
+insert at front,200000,LinkedList,3,6.1
+insert at front,200000,LinkedList,4,8.5
+insert at front,200000,LinkedList,5,8.8
+insert at front,200000,ArrayDeque,1,3.3
+insert at front,200000,ArrayDeque,2,2.3
+insert at front,200000,ArrayDeque,3,4.5
+insert at front,200000,ArrayDeque,4,2.7
+insert at front,200000,ArrayDeque,5,3.1
+insert at front,200000,plain array,1,124308.2
+insert at front,200000,plain array,2,111711.4
+insert at front,200000,plain array,3,114145.2
+insert at front,200000,plain array,4,110028.0
+insert at front,200000,plain array,5,112445.3
+insert in middle,10000,ArrayList,1,205.1
+insert in middle,10000,ArrayList,2,126.3
+insert in middle,10000,ArrayList,3,142.2
+insert in middle,10000,ArrayList,4,219.7
+insert in middle,10000,ArrayList,5,176.0
+insert in middle,10000,LinkedList,1,9695.1
+insert in middle,10000,LinkedList,2,9747.9
+insert in middle,10000,LinkedList,3,8965.1
+insert in middle,10000,LinkedList,4,9769.7
+insert in middle,10000,LinkedList,5,9111.7
+insert in middle,10000,plain array,1,3875.8
+insert in middle,10000,plain array,2,3205.8
+insert in middle,10000,plain array,3,3140.2
+insert in middle,10000,plain array,4,3091.1
+insert in middle,10000,plain array,5,3092.1
+insert in middle,50000,ArrayList,1,2090.4
+insert in middle,50000,ArrayList,2,1850.4
+insert in middle,50000,ArrayList,3,2396.4
+insert in middle,50000,ArrayList,4,2057.1
+insert in middle,50000,ArrayList,5,1812.5
+insert in middle,50000,LinkedList,1,38376.7
+insert in middle,50000,LinkedList,2,37092.4
+insert in middle,50000,LinkedList,3,37793.0
+insert in middle,50000,LinkedList,4,37269.4
+insert in middle,50000,LinkedList,5,38089.0
+insert in middle,50000,plain array,1,13986.9
+insert in middle,50000,plain array,2,13593.7
+insert in middle,50000,plain array,3,13603.8
+insert in middle,50000,plain array,4,16560.3
+insert in middle,50000,plain array,5,20421.0
+insert in middle,100000,ArrayList,1,4453.8
+insert in middle,100000,ArrayList,2,5425.8
+insert in middle,100000,ArrayList,3,4074.9
+insert in middle,100000,ArrayList,4,4100.5
+insert in middle,100000,ArrayList,5,4075.6
+insert in middle,100000,LinkedList,1,127119.8
+insert in middle,100000,LinkedList,2,155749.3
+insert in middle,100000,LinkedList,3,150086.2
+insert in middle,100000,LinkedList,4,120917.7
+insert in middle,100000,LinkedList,5,121703.0
+insert in middle,100000,plain array,1,29053.8
+insert in middle,100000,plain array,2,29182.6
+insert in middle,100000,plain array,3,36181.7
+insert in middle,100000,plain array,4,37938.0
+insert in middle,100000,plain array,5,37623.9
+insert in middle,200000,ArrayList,1,9875.3
+insert in middle,200000,ArrayList,2,9026.6
+insert in middle,200000,ArrayList,3,9669.2
+insert in middle,200000,ArrayList,4,9427.7
+insert in middle,200000,ArrayList,5,11856.0
+insert in middle,200000,LinkedList,1,306909.0
+insert in middle,200000,LinkedList,2,325161.8
+insert in middle,200000,LinkedList,3,295793.8
+insert in middle,200000,LinkedList,4,291863.9
+insert in middle,200000,LinkedList,5,312557.6
+insert in middle,200000,plain array,1,61600.1
+insert in middle,200000,plain array,2,61445.9
+insert in middle,200000,plain array,3,65244.3
+insert in middle,200000,plain array,4,65275.8
+insert in middle,200000,plain array,5,66705.9
+remove at front,10000,ArrayList,1,273.4
+remove at front,10000,ArrayList,2,263.0
+remove at front,10000,ArrayList,3,259.6
+remove at front,10000,ArrayList,4,292.0
+remove at front,10000,ArrayList,5,262.4
+remove at front,10000,LinkedList,1,15.1
+remove at front,10000,LinkedList,2,15.5
+remove at front,10000,LinkedList,3,19.6
+remove at front,10000,LinkedList,4,15.5
+remove at front,10000,LinkedList,5,15.4
+remove at front,10000,ArrayDeque,1,70.5
+remove at front,10000,ArrayDeque,2,76.3
+remove at front,10000,ArrayDeque,3,111.4
+remove at front,10000,ArrayDeque,4,11.9
+remove at front,10000,ArrayDeque,5,343.0
+remove at front,10000,plain array,1,5900.8
+remove at front,10000,plain array,2,8468.6
+remove at front,10000,plain array,3,7387.2
+remove at front,10000,plain array,4,10895.5
+remove at front,10000,plain array,5,10029.0
+remove at front,50000,ArrayList,1,4787.6
+remove at front,50000,ArrayList,2,9353.6
+remove at front,50000,ArrayList,3,6890.7
+remove at front,50000,ArrayList,4,9955.2
+remove at front,50000,ArrayList,5,8745.2
+remove at front,50000,LinkedList,1,28.8
+remove at front,50000,LinkedList,2,28.4
+remove at front,50000,LinkedList,3,37.6
+remove at front,50000,LinkedList,4,40.3
+remove at front,50000,LinkedList,5,43.2
+remove at front,50000,ArrayDeque,1,22.9
+remove at front,50000,ArrayDeque,2,25.8
+remove at front,50000,ArrayDeque,3,22.1
+remove at front,50000,ArrayDeque,4,23.0
+remove at front,50000,ArrayDeque,5,22.0
+remove at front,50000,plain array,1,27797.8
+remove at front,50000,plain array,2,27314.8
+remove at front,50000,plain array,3,26803.5
+remove at front,50000,plain array,4,24557.5
+remove at front,50000,plain array,5,22742.1
+remove at front,100000,ArrayList,1,8615.2
+remove at front,100000,ArrayList,2,8327.9
+remove at front,100000,ArrayList,3,9070.8
+remove at front,100000,ArrayList,4,8007.2
+remove at front,100000,ArrayList,5,8731.8
+remove at front,100000,LinkedList,1,12.4
+remove at front,100000,LinkedList,2,4.0
+remove at front,100000,LinkedList,3,4.3
+remove at front,100000,LinkedList,4,5.8
+remove at front,100000,LinkedList,5,11.7
+remove at front,100000,ArrayDeque,1,2.2
+remove at front,100000,ArrayDeque,2,2.2
+remove at front,100000,ArrayDeque,3,3.2
+remove at front,100000,ArrayDeque,4,20.0
+remove at front,100000,ArrayDeque,5,1.9
+remove at front,100000,plain array,1,55379.3
+remove at front,100000,plain array,2,55134.0
+remove at front,100000,plain array,3,56298.6
+remove at front,100000,plain array,4,62178.2
+remove at front,100000,plain array,5,55091.3
+remove at front,200000,ArrayList,1,19582.3
+remove at front,200000,ArrayList,2,20262.4
+remove at front,200000,ArrayList,3,17826.1
+remove at front,200000,ArrayList,4,16583.5
+remove at front,200000,ArrayList,5,15274.9
+remove at front,200000,LinkedList,1,11.6
+remove at front,200000,LinkedList,2,3.7
+remove at front,200000,LinkedList,3,13.4
+remove at front,200000,LinkedList,4,4.7
+remove at front,200000,LinkedList,5,6.5
+remove at front,200000,ArrayDeque,1,2.1
+remove at front,200000,ArrayDeque,2,1.9
+remove at front,200000,ArrayDeque,3,2.2
+remove at front,200000,ArrayDeque,4,2.2
+remove at front,200000,ArrayDeque,5,2.0
+remove at front,200000,plain array,1,92912.4
+remove at front,200000,plain array,2,124700.3
+remove at front,200000,plain array,3,125915.2
+remove at front,200000,plain array,4,111940.9
+remove at front,200000,plain array,5,106936.4
+remove in middle,10000,ArrayList,1,121.4
+remove in middle,10000,ArrayList,2,117.9
+remove in middle,10000,ArrayList,3,125.8
+remove in middle,10000,ArrayList,4,121.8
+remove in middle,10000,ArrayList,5,136.2
+remove in middle,10000,LinkedList,1,6867.3
+remove in middle,10000,LinkedList,2,6247.5
+remove in middle,10000,LinkedList,3,6409.5
+remove in middle,10000,LinkedList,4,6318.0
+remove in middle,10000,LinkedList,5,6293.7
+remove in middle,10000,plain array,1,1698.9
+remove in middle,10000,plain array,2,1644.5
+remove in middle,10000,plain array,3,1853.7
+remove in middle,10000,plain array,4,1885.4
+remove in middle,10000,plain array,5,1878.9
+remove in middle,50000,ArrayList,1,1892.9
+remove in middle,50000,ArrayList,2,1885.7
+remove in middle,50000,ArrayList,3,1893.8
+remove in middle,50000,ArrayList,4,1871.2
+remove in middle,50000,ArrayList,5,2190.8
+remove in middle,50000,LinkedList,1,42175.2
+remove in middle,50000,LinkedList,2,40508.6
+remove in middle,50000,LinkedList,3,44320.7
+remove in middle,50000,LinkedList,4,45085.6
+remove in middle,50000,LinkedList,5,46665.6
+remove in middle,50000,plain array,1,14930.9
+remove in middle,50000,plain array,2,17080.1
+remove in middle,50000,plain array,3,15478.8
+remove in middle,50000,plain array,4,13748.3
+remove in middle,50000,plain array,5,12847.9
+remove in middle,100000,ArrayList,1,4787.8
+remove in middle,100000,ArrayList,2,4380.2
+remove in middle,100000,ArrayList,3,4181.6
+remove in middle,100000,ArrayList,4,4202.6
+remove in middle,100000,ArrayList,5,3972.5
+remove in middle,100000,LinkedList,1,105818.7
+remove in middle,100000,LinkedList,2,225935.9
+remove in middle,100000,LinkedList,3,110468.1
+remove in middle,100000,LinkedList,4,110045.3
+remove in middle,100000,LinkedList,5,104285.8
+remove in middle,100000,plain array,1,20809.6
+remove in middle,100000,plain array,2,20876.8
+remove in middle,100000,plain array,3,20988.6
+remove in middle,100000,plain array,4,21354.4
+remove in middle,100000,plain array,5,21121.2
+remove in middle,200000,ArrayList,1,7993.5
+remove in middle,200000,ArrayList,2,8733.1
+remove in middle,200000,ArrayList,3,9041.1
+remove in middle,200000,ArrayList,4,8424.2
+remove in middle,200000,ArrayList,5,10059.8
+remove in middle,200000,LinkedList,1,207915.6
+remove in middle,200000,LinkedList,2,245765.3
+remove in middle,200000,LinkedList,3,261065.7
+remove in middle,200000,LinkedList,4,266606.0
+remove in middle,200000,LinkedList,5,330673.8
+remove in middle,200000,plain array,1,43652.8
+remove in middle,200000,plain array,2,44875.1
+remove in middle,200000,plain array,3,44706.1
+remove in middle,200000,plain array,4,42895.4
+remove in middle,200000,plain array,5,42856.2
+get k-th (random),10000,ArrayList,1,8.1
+get k-th (random),10000,ArrayList,2,16.8
+get k-th (random),10000,ArrayList,3,10.0
+get k-th (random),10000,ArrayList,4,6.8
+get k-th (random),10000,ArrayList,5,42.6
+get k-th (random),10000,LinkedList,1,4397.4
+get k-th (random),10000,LinkedList,2,4332.9
+get k-th (random),10000,LinkedList,3,4322.5
+get k-th (random),10000,LinkedList,4,4317.1
+get k-th (random),10000,LinkedList,5,4134.8
+get k-th (random),10000,plain array,1,4.4
+get k-th (random),10000,plain array,2,5.0
+get k-th (random),10000,plain array,3,3.0
+get k-th (random),10000,plain array,4,2.9
+get k-th (random),10000,plain array,5,3.1
+get k-th (random),50000,ArrayList,1,19.7
+get k-th (random),50000,ArrayList,2,17.8
+get k-th (random),50000,ArrayList,3,28.1
+get k-th (random),50000,ArrayList,4,25.3
+get k-th (random),50000,ArrayList,5,19.2
+get k-th (random),50000,LinkedList,1,34408.1
+get k-th (random),50000,LinkedList,2,25332.8
+get k-th (random),50000,LinkedList,3,24247.3
+get k-th (random),50000,LinkedList,4,22394.3
+get k-th (random),50000,LinkedList,5,21818.8
+get k-th (random),50000,plain array,1,5.1
+get k-th (random),50000,plain array,2,4.3
+get k-th (random),50000,plain array,3,8.0
+get k-th (random),50000,plain array,4,5.9
+get k-th (random),50000,plain array,5,6.6
+get k-th (random),100000,ArrayList,1,17.8
+get k-th (random),100000,ArrayList,2,16.6
+get k-th (random),100000,ArrayList,3,16.8
+get k-th (random),100000,ArrayList,4,20.2
+get k-th (random),100000,ArrayList,5,49.7
+get k-th (random),100000,LinkedList,1,45834.2
+get k-th (random),100000,LinkedList,2,45582.3
+get k-th (random),100000,LinkedList,3,59952.0
+get k-th (random),100000,LinkedList,4,67476.5
+get k-th (random),100000,LinkedList,5,61808.1
+get k-th (random),100000,plain array,1,12.3
+get k-th (random),100000,plain array,2,11.1
+get k-th (random),100000,plain array,3,9.2
+get k-th (random),100000,plain array,4,8.4
+get k-th (random),100000,plain array,5,8.0
+get k-th (random),200000,ArrayList,1,32.8
+get k-th (random),200000,ArrayList,2,23.0
+get k-th (random),200000,ArrayList,3,29.1
+get k-th (random),200000,ArrayList,4,24.1
+get k-th (random),200000,ArrayList,5,23.2
+get k-th (random),200000,LinkedList,1,201234.9
+get k-th (random),200000,LinkedList,2,153173.6
+get k-th (random),200000,LinkedList,3,130116.0
+get k-th (random),200000,LinkedList,4,141415.1
+get k-th (random),200000,LinkedList,5,130038.9
+get k-th (random),200000,plain array,1,19.7
+get k-th (random),200000,plain array,2,35.4
+get k-th (random),200000,plain array,3,17.4
+get k-th (random),200000,plain array,4,15.5
+get k-th (random),200000,plain array,5,12.7
+iterate whole list,10000,ArrayList,1,83.5
+iterate whole list,10000,ArrayList,2,70.7
+iterate whole list,10000,ArrayList,3,77.2
+iterate whole list,10000,ArrayList,4,82.7
+iterate whole list,10000,ArrayList,5,79.7
+iterate whole list,10000,LinkedList,1,12.4
+iterate whole list,10000,LinkedList,2,3.2
+iterate whole list,10000,LinkedList,3,3.5
+iterate whole list,10000,LinkedList,4,3.4
+iterate whole list,10000,LinkedList,5,3.2
+iterate whole list,10000,ArrayDeque,1,4.4
+iterate whole list,10000,ArrayDeque,2,24.3
+iterate whole list,10000,ArrayDeque,3,4.2
+iterate whole list,10000,ArrayDeque,4,4.0
+iterate whole list,10000,ArrayDeque,5,4.1
+iterate whole list,10000,plain array,1,1.8
+iterate whole list,10000,plain array,2,1.9
+iterate whole list,10000,plain array,3,1.8
+iterate whole list,10000,plain array,4,1.9
+iterate whole list,10000,plain array,5,2.0
+iterate whole list,50000,ArrayList,1,9.1
+iterate whole list,50000,ArrayList,2,6.2
+iterate whole list,50000,ArrayList,3,3.7
+iterate whole list,50000,ArrayList,4,3.6
+iterate whole list,50000,ArrayList,5,3.6
+iterate whole list,50000,LinkedList,1,5.4
+iterate whole list,50000,LinkedList,2,5.5
+iterate whole list,50000,LinkedList,3,5.6
+iterate whole list,50000,LinkedList,4,5.3
+iterate whole list,50000,LinkedList,5,5.3
+iterate whole list,50000,ArrayDeque,1,3.9
+iterate whole list,50000,ArrayDeque,2,4.0
+iterate whole list,50000,ArrayDeque,3,4.3
+iterate whole list,50000,ArrayDeque,4,3.9
+iterate whole list,50000,ArrayDeque,5,4.1
+iterate whole list,50000,plain array,1,0.9
+iterate whole list,50000,plain array,2,0.9
+iterate whole list,50000,plain array,3,2.6
+iterate whole list,50000,plain array,4,0.9
+iterate whole list,50000,plain array,5,0.8
+iterate whole list,100000,ArrayList,1,5.8
+iterate whole list,100000,ArrayList,2,12.7
+iterate whole list,100000,ArrayList,3,11.4
+iterate whole list,100000,ArrayList,4,12.0
+iterate whole list,100000,ArrayList,5,11.8
+iterate whole list,100000,LinkedList,1,5.5
+iterate whole list,100000,LinkedList,2,5.9
+iterate whole list,100000,LinkedList,3,6.7
+iterate whole list,100000,LinkedList,4,8.0
+iterate whole list,100000,LinkedList,5,8.1
+iterate whole list,100000,ArrayDeque,1,6.4
+iterate whole list,100000,ArrayDeque,2,6.6
+iterate whole list,100000,ArrayDeque,3,5.0
+iterate whole list,100000,ArrayDeque,4,4.9
+iterate whole list,100000,ArrayDeque,5,4.7
+iterate whole list,100000,plain array,1,0.8
+iterate whole list,100000,plain array,2,0.9
+iterate whole list,100000,plain array,3,0.8
+iterate whole list,100000,plain array,4,0.7
+iterate whole list,100000,plain array,5,0.8
+iterate whole list,200000,ArrayList,1,4.8
+iterate whole list,200000,ArrayList,2,5.1
+iterate whole list,200000,ArrayList,3,4.8
+iterate whole list,200000,ArrayList,4,4.8
+iterate whole list,200000,ArrayList,5,5.4
+iterate whole list,200000,LinkedList,1,7.8
+iterate whole list,200000,LinkedList,2,7.3
+iterate whole list,200000,LinkedList,3,7.0
+iterate whole list,200000,LinkedList,4,7.4
+iterate whole list,200000,LinkedList,5,7.1
+iterate whole list,200000,ArrayDeque,1,4.8
+iterate whole list,200000,ArrayDeque,2,4.5
+iterate whole list,200000,ArrayDeque,3,5.1
+iterate whole list,200000,ArrayDeque,4,4.5
+iterate whole list,200000,ArrayDeque,5,4.5
+iterate whole list,200000,plain array,1,0.9
+iterate whole list,200000,plain array,2,0.9
+iterate whole list,200000,plain array,3,0.9
+iterate whole list,200000,plain array,4,0.9
+iterate whole list,200000,plain array,5,0.9
+
+up_next,structure,run,total_ms
+up_next,ArrayList,1,660.72
+up_next,ArrayList,2,642.03
+up_next,ArrayList,3,637.09
+up_next,ArrayList,4,620.59
+up_next,ArrayList,5,624.56
+up_next,LinkedList,1,13.37
+up_next,LinkedList,2,3.34
+up_next,LinkedList,3,7.28
+up_next,LinkedList,4,3.40
+up_next,LinkedList,5,5.98
+up_next,ArrayDeque,1,12.59
+up_next,ArrayDeque,2,8.80
+up_next,ArrayDeque,3,8.52
+up_next,ArrayDeque,4,5.85
+up_next,ArrayDeque,5,3.14

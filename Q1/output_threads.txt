@@ -1,0 +1,45 @@
+8 threads x 50,000 appends of "log;"; expected length = 1600000
+StringBuilder  trial  1: length = 1599996  missing chars = 4  exceptions = 1  CORRUPTED
+StringBuilder  trial  2: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuilder  trial  3: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuilder  trial  4: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuilder  trial  5: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuilder  trial  6: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuilder  trial  7: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuilder  trial  8: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuilder  trial  9: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuilder  trial 10: length = 1599996  missing chars = 4  exceptions = 1  CORRUPTED
+StringBuilder  trial 11: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuilder  trial 12: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuilder  trial 13: length = 1599996  missing chars = 4  exceptions = 1  CORRUPTED
+StringBuilder  trial 14: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuilder  trial 15: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuilder  trial 16: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuilder  trial 17: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuilder  trial 18: length = 1599988  missing chars = 12  exceptions = 3  CORRUPTED
+StringBuilder  trial 19: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuilder  trial 20: length = 1599980  missing chars = 20  exceptions = 5  CORRUPTED
+>>> StringBuilder: 5 of 20 trials corrupted
+
+StringBuffer   trial  1: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuffer   trial  2: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuffer   trial  3: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuffer   trial  4: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuffer   trial  5: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuffer   trial  6: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuffer   trial  7: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuffer   trial  8: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuffer   trial  9: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuffer   trial 10: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuffer   trial 11: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuffer   trial 12: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuffer   trial 13: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuffer   trial 14: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuffer   trial 15: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuffer   trial 16: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuffer   trial 17: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuffer   trial 18: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuffer   trial 19: length = 1600000  missing chars = 0  exceptions = 0  OK
+StringBuffer   trial 20: length = 1600000  missing chars = 0  exceptions = 0  OK
+>>> StringBuffer: 0 of 20 trials corrupted
+

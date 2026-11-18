@@ -1,0 +1,39 @@
+MAIN WORKLOADS (mean +- sd over 7 runs, after 3 warm-up rounds)
+workload                                         approach            mean ms      sd ms   alloc MB/run intermediate Strings per ticket
+W1 short ticket (10 fields) x 200,000 tickets    String +              29.89       5.96          149.5 9
+W1 short ticket (10 fields) x 200,000 tickets    StringBuilder         27.85      15.74           59.5 0 (+2 internal array growths)
+W1 short ticket (10 fields) x 200,000 tickets    StringBuffer          21.71       6.76           61.0 0 (+2 internal array growths)
+W1 short ticket (10 fields) x 200,000 tickets    String.join           23.20      19.63           62.6 0 (+1 temp array)
+W1 short ticket (10 fields) x 200,000 tickets    StringJoiner          31.52       9.28           53.4 0
+W1 short ticket (10 fields) x 200,000 tickets    String.format         77.69      10.18          241.1 ~10 (Formatter parses format + boxes)
+
+W2 bulk (50 fields) x 10,000 tickets             String +               7.25       0.16          111.5 49
+W2 bulk (50 fields) x 10,000 tickets             StringBuilder          2.70       0.07           16.0 0 (+5 internal array growths)
+W2 bulk (50 fields) x 10,000 tickets             StringBuffer           3.52       0.94           16.1 0 (+5 internal array growths)
+W2 bulk (50 fields) x 10,000 tickets             String.join            3.14       0.09           12.2 0 (+1 temp array)
+W2 bulk (50 fields) x 10,000 tickets             StringJoiner           6.70       0.33            9.6 0
+W2 bulk (50 fields) x 10,000 tickets             String.format         91.20     111.20           60.2 ~50 (Formatter parses format + boxes)
+
+W3 group manifest (20,000 fields) x 3 tickets    String +             467.09      18.81         4458.1 19999
+W3 group manifest (20,000 fields) x 3 tickets    StringBuilder          0.43       0.10            2.1 0 (+14 internal array growths)
+W3 group manifest (20,000 fields) x 3 tickets    StringBuffer           0.52       0.15            2.1 0 (+14 internal array growths)
+W3 group manifest (20,000 fields) x 3 tickets    String.join            0.46       0.08            1.3 0 (+1 temp array)
+W3 group manifest (20,000 fields) x 3 tickets    StringJoiner           0.73       0.06            1.2 0
+W3 group manifest (20,000 fields) x 3 tickets    String.format          2.58       0.51            7.4 ~20000 (Formatter parses format + boxes)
+
+SCALING: time to build ONE ticket of n fields (mean of 7 runs of 20 tickets each, microseconds per ticket)
+       n       String +  StringBuilder   StringBuffer    String/SB
+     500           49.7            3.3            3.0         15.0
+    1000          205.6            6.1            6.4         33.5
+    2000          836.7           16.7           19.1         50.1
+    4000         5196.8           29.6           29.3        175.4
+    8000        21413.4           36.8           43.5        581.2
+   16000        78719.5           77.0           89.6       1022.1
+   32000       335095.6          206.7          228.8       1621.0
+
+MEMORY (retained, MB) after building and keeping 10,000 tickets of 50 fields:
+  String +       before 3.9 MB, after 7.6 MB, retained 3.7 MB (10000 tickets)
+  StringBuilder  before 3.5 MB, after 7.6 MB, retained 4.1 MB (10000 tickets)
+  StringBuffer   before 3.5 MB, after 7.6 MB, retained 4.1 MB (10000 tickets)
+
+(sink true)  raw data written to raw_data.csv

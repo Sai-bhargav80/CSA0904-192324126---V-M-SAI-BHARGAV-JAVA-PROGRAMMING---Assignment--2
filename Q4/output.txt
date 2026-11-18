@@ -1,0 +1,33 @@
+Pharmacy stock: build time, 100,000 random lookups, and the two evening reports (mean of 5 runs, after warm-up)
+        n map              build ms   100k lookups   code-order rpt  added-order rpt order correct (code/added)
+     1000 HashMap               0.2         2.2 ms           2.1 ms           1.5 ms true/true
+     1000 TreeMap               0.9        25.3 ms           1.4 ms           1.6 ms true/true
+     1000 LinkedHashMap         0.8         5.0 ms           1.8 ms           0.2 ms true/true
+     1000 Hashtable             0.1         4.3 ms           0.5 ms           2.2 ms true/true
+
+    10000 HashMap               1.7         4.8 ms           8.4 ms           5.8 ms true/true
+    10000 TreeMap               7.8        54.8 ms           7.6 ms           6.8 ms true/true
+    10000 LinkedHashMap         0.9         7.2 ms          10.6 ms           3.1 ms true/true
+    10000 Hashtable             1.0         6.2 ms           6.6 ms           5.6 ms true/true
+
+   100000 HashMap              19.9         8.1 ms         130.0 ms          72.5 ms true/true
+   100000 TreeMap              76.9        82.4 ms          43.2 ms          47.0 ms true/true
+   100000 LinkedHashMap         8.2         4.8 ms          91.0 ms          12.8 ms true/true
+   100000 Hashtable            14.0         8.7 ms          44.0 ms          26.6 ms true/true
+
+  1000000 HashMap              91.1        11.8 ms        1061.6 ms         455.2 ms true/true
+  1000000 TreeMap            1920.1       219.4 ms        1100.5 ms         404.7 ms true/true
+  1000000 LinkedHashMap       105.9        10.4 ms        1393.7 ms         134.3 ms true/true
+  1000000 Hashtable            91.7        14.4 ms         964.8 ms         382.2 ms true/true
+
+SINGLE LOOKUP latency at n = 1,000,000 (each of 100,000 lookups timed individually, ns)
+  HashMap  mean      509 ns   median    454 ns   p99     1026 ns   max    186261 ns
+  TreeMap  mean     2741 ns   median   2582 ns   p99     4667 ns   max    102033 ns
+
+ALTERNATIVE: array of codes sorted by code + Arrays.binarySearch
+        n  100k lookups ms   insert 1 new (us/op) code-order report ms
+     1000             33.1                   26.1                  0.3
+    10000             47.3                    1.1                  0.8
+   100000             63.4                    1.1                 27.3
+  1000000            167.4                   14.3                353.0
+(sink true)
